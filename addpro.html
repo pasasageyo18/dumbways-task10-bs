@@ -65,34 +65,44 @@
         <div class="container-fluid">
           <div class="container w-75 p-4">
             <h2 class="text-center mb-5 fw-bold h1">Add My Project</h2>
-            <form action="" class="w-100">
+            <form action="" class="w-100" onsubmit="addBlog(event)">
               <div class="mb-3">
-                <label for="email" class="form-label fw-bold fs-4"
+                <label for="input-blog-title" class="form-label fw-bold fs-4"
                   >Email address</label
                 >
-                <input type="email" class="form-control" id="email" />
+                <input
+                  type="email"
+                  class="form-control"
+                  id="input-blog-title"
+                />
               </div>
               <div class="row mb-3">
                 <div class="col-lg-6 col-md-12 mb-3">
-                  <label for="startdate" class="form-label fw-bold fs-4"
+                  <label
+                    for="input-blog-start-date"
+                    class="form-label fw-bold fs-4"
                     >Start Date</label
                   >
-                  <input type="date" class="form-control" id="startdate" />
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="input-blog-start-date"
+                  />
                 </div>
                 <div class="col-lg-6 col-md-12">
-                  <label for="enddate" class="form-label fw-bold fs-4"
+                  <label for="input-end-date" class="form-label fw-bold fs-4"
                     >End Date</label
                   >
-                  <input type="date" class="form-control" id="enddate" />
+                  <input type="date" class="form-control" id="input-end-date" />
                 </div>
               </div>
               <div class="mb-3">
-                <label for="description" class="form-label fw-bold fs-4"
+                <label for="input-blog-content" class="form-label fw-bold fs-4"
                   >Description</label
                 >
                 <textarea
                   class="form-control"
-                  id="description"
+                  id="input-blog-content"
                   rows="5"
                 ></textarea>
               </div>
@@ -156,17 +166,19 @@
                   >Upload Image</label
                 >
                 <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1">Choose</span>
+                  <span class="input-group-text" id="input-blog-image"
+                    >Choose</span
+                  >
                   <input
                     type="text"
                     class="form-control"
-                    id="basic-addon1"
-                    aria-describedby="basic-addon1"
+                    id="input-blog-image"
+                    aria-describedby="input-blog-image"
                   />
                   <button
                     class="btn bg-transparent"
                     type="button"
-                    id="basic-addon1"
+                    id="input-blog-image"
                   >
                     <i class="fa-solid fa-paperclip"></i>
                   </button>
@@ -185,5 +197,6 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="js/blog.js"></script>
   </body>
 </html>
